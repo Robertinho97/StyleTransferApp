@@ -1,0 +1,136 @@
+{
+  "build": "pyhd8ed1ab_0",
+  "build_number": 0,
+  "channel": "https://conda.anaconda.org/conda-forge/noarch",
+  "constrains": [],
+  "depends": [
+    "python >=3.6"
+  ],
+  "extracted_package_dir": "C:\\Users\\Usuario\\anaconda3\\pkgs\\docstring-to-markdown-0.12-pyhd8ed1ab_0",
+  "features": "",
+  "files": [
+    "Lib/site-packages/docstring_to_markdown-0.12.dist-info/INSTALLER",
+    "Lib/site-packages/docstring_to_markdown-0.12.dist-info/LICENSE",
+    "Lib/site-packages/docstring_to_markdown-0.12.dist-info/METADATA",
+    "Lib/site-packages/docstring_to_markdown-0.12.dist-info/RECORD",
+    "Lib/site-packages/docstring_to_markdown-0.12.dist-info/REQUESTED",
+    "Lib/site-packages/docstring_to_markdown-0.12.dist-info/WHEEL",
+    "Lib/site-packages/docstring_to_markdown-0.12.dist-info/direct_url.json",
+    "Lib/site-packages/docstring_to_markdown-0.12.dist-info/top_level.txt",
+    "Lib/site-packages/docstring_to_markdown/__init__.py",
+    "Lib/site-packages/docstring_to_markdown/py.typed",
+    "Lib/site-packages/docstring_to_markdown/rst.py",
+    ".nonadmin",
+    "Lib/site-packages/docstring_to_markdown/__pycache__/__init__.cpython-39.pyc",
+    "Lib/site-packages/docstring_to_markdown/__pycache__/rst.cpython-39.pyc"
+  ],
+  "fn": "docstring-to-markdown-0.12-pyhd8ed1ab_0.conda",
+  "license": "LGPL-2.1-or-later",
+  "link": {
+    "source": "C:\\Users\\Usuario\\anaconda3\\pkgs\\docstring-to-markdown-0.12-pyhd8ed1ab_0",
+    "type": 1
+  },
+  "md5": "3fce2c07a53d244504afb85babf53828",
+  "name": "docstring-to-markdown",
+  "noarch": "python",
+  "package_tarball_full_path": "C:\\Users\\Usuario\\anaconda3\\pkgs\\docstring-to-markdown-0.12-pyhd8ed1ab_0.conda",
+  "package_type": "noarch_python",
+  "paths_data": {
+    "paths": [
+      {
+        "_path": "site-packages/docstring_to_markdown-0.12.dist-info/INSTALLER",
+        "path_type": "hardlink",
+        "sha256": "d0edee15f91b406f3f99726e44eb990be6e34fd0345b52b910c568e0eef6a2a8",
+        "sha256_in_prefix": "d0edee15f91b406f3f99726e44eb990be6e34fd0345b52b910c568e0eef6a2a8",
+        "size_in_bytes": 5
+      },
+      {
+        "_path": "site-packages/docstring_to_markdown-0.12.dist-info/LICENSE",
+        "path_type": "hardlink",
+        "sha256": "20c17d8b8c48a600800dfd14f95d5cb9ff47066a9641ddeab48dc54aec96e331",
+        "sha256_in_prefix": "20c17d8b8c48a600800dfd14f95d5cb9ff47066a9641ddeab48dc54aec96e331",
+        "size_in_bytes": 26526
+      },
+      {
+        "_path": "site-packages/docstring_to_markdown-0.12.dist-info/METADATA",
+        "path_type": "hardlink",
+        "sha256": "578b7debfc61ec48faabf1b9cc40964e5a7782222668472e6e927f6e5202acfb",
+        "sha256_in_prefix": "578b7debfc61ec48faabf1b9cc40964e5a7782222668472e6e927f6e5202acfb",
+        "size_in_bytes": 1941
+      },
+      {
+        "_path": "site-packages/docstring_to_markdown-0.12.dist-info/RECORD",
+        "path_type": "hardlink",
+        "sha256": "69d5a820b90ba907b0ff0c777588cdd16c0b0955c31c78e2a3758e7f4fda66ce",
+        "sha256_in_prefix": "69d5a820b90ba907b0ff0c777588cdd16c0b0955c31c78e2a3758e7f4fda66ce",
+        "size_in_bytes": 1149
+      },
+      {
+        "_path": "site-packages/docstring_to_markdown-0.12.dist-info/REQUESTED",
+        "path_type": "hardlink",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "sha256_in_prefix": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "size_in_bytes": 0
+      },
+      {
+        "_path": "site-packages/docstring_to_markdown-0.12.dist-info/WHEEL",
+        "path_type": "hardlink",
+        "sha256": "a6472d658cd44b8018567e9d27eef7ebb389662bc5d9ef1103d6ff6418e27f5f",
+        "sha256_in_prefix": "a6472d658cd44b8018567e9d27eef7ebb389662bc5d9ef1103d6ff6418e27f5f",
+        "size_in_bytes": 92
+      },
+      {
+        "_path": "site-packages/docstring_to_markdown-0.12.dist-info/direct_url.json",
+        "path_type": "hardlink",
+        "sha256": "381e3f99c6b448b6ffecd48e782d199b8423bebd1bfeef5d3477ed23647ed127",
+        "sha256_in_prefix": "381e3f99c6b448b6ffecd48e782d199b8423bebd1bfeef5d3477ed23647ed127",
+        "size_in_bytes": 117
+      },
+      {
+        "_path": "site-packages/docstring_to_markdown-0.12.dist-info/top_level.txt",
+        "path_type": "hardlink",
+        "sha256": "fda7f9e3cda51a8f836dc4ff82d71b133567207e95aac32f37b3b60a006f60d0",
+        "sha256_in_prefix": "fda7f9e3cda51a8f836dc4ff82d71b133567207e95aac32f37b3b60a006f60d0",
+        "size_in_bytes": 22
+      },
+      {
+        "_path": "site-packages/docstring_to_markdown/__init__.py",
+        "path_type": "hardlink",
+        "sha256": "da68de107b8feffef3a558a5452345d9ef06f33a541c510e5f02321ebcbd8e56",
+        "sha256_in_prefix": "da68de107b8feffef3a558a5452345d9ef06f33a541c510e5f02321ebcbd8e56",
+        "size_in_bytes": 264
+      },
+      {
+        "_path": "site-packages/docstring_to_markdown/py.typed",
+        "path_type": "hardlink",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "sha256_in_prefix": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "size_in_bytes": 0
+      },
+      {
+        "_path": "site-packages/docstring_to_markdown/rst.py",
+        "path_type": "hardlink",
+        "sha256": "5737918eb249e2554eb0d41269ebd2aaa29f458b1c5d57c7686b25c6fd56921c",
+        "sha256_in_prefix": "5737918eb249e2554eb0d41269ebd2aaa29f458b1c5d57c7686b25c6fd56921c",
+        "size_in_bytes": 25151
+      },
+      {
+        "_path": "Lib/site-packages/docstring_to_markdown/__pycache__/__init__.cpython-39.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "Lib/site-packages/docstring_to_markdown/__pycache__/rst.cpython-39.pyc",
+        "path_type": "pyc_file"
+      }
+    ],
+    "paths_version": 1
+  },
+  "requested_spec": "None",
+  "sha256": "118553be84d690b1c36fce369e934836c29f9b62b0ca8b9b29f170abbd7d4009",
+  "size": 29249,
+  "subdir": "noarch",
+  "timestamp": 1679424423552,
+  "track_features": "",
+  "url": "https://conda.anaconda.org/conda-forge/noarch/docstring-to-markdown-0.12-pyhd8ed1ab_0.conda",
+  "version": "0.12"
+}

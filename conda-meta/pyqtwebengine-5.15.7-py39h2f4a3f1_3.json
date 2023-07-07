@@ -1,0 +1,357 @@
+{
+  "build": "py39h2f4a3f1_3",
+  "build_number": 3,
+  "channel": "https://conda.anaconda.org/conda-forge/win-64",
+  "constrains": [],
+  "depends": [
+    "pyqt >=5.15.7,<5.16.0a0",
+    "python >=3.9,<3.10.0a0",
+    "python_abi 3.9.* *_cp39",
+    "qt-main >=5.15.6,<5.16.0a0",
+    "qt-webengine >=5.15.4,<5.16.0a0",
+    "sip >=6.7.5,<6.8.0a0",
+    "ucrt >=10.0.20348.0",
+    "vc >=14.2,<15",
+    "vs2015_runtime >=14.29.30139"
+  ],
+  "extracted_package_dir": "C:\\Users\\Usuario\\anaconda3\\pkgs\\pyqtwebengine-5.15.7-py39h2f4a3f1_3",
+  "features": "",
+  "files": [
+    "Lib/site-packages/PyQt5/QtWebEngine.pyd",
+    "Lib/site-packages/PyQt5/QtWebEngineCore.pyd",
+    "Lib/site-packages/PyQt5/QtWebEngineWidgets.pyd",
+    "Lib/site-packages/PyQt5/bindings/QtWebEngine/QtWebEngine.toml",
+    "Lib/site-packages/PyQt5/bindings/QtWebEngine/QtWebEnginemod.sip",
+    "Lib/site-packages/PyQt5/bindings/QtWebEngine/qquickwebengineprofile.sip",
+    "Lib/site-packages/PyQt5/bindings/QtWebEngine/qquickwebenginescript.sip",
+    "Lib/site-packages/PyQt5/bindings/QtWebEngine/qtwebengineglobal.sip",
+    "Lib/site-packages/PyQt5/bindings/QtWebEngineCore/QtWebEngineCore.toml",
+    "Lib/site-packages/PyQt5/bindings/QtWebEngineCore/QtWebEngineCoremod.sip",
+    "Lib/site-packages/PyQt5/bindings/QtWebEngineCore/qwebengineclientcertificatestore.sip",
+    "Lib/site-packages/PyQt5/bindings/QtWebEngineCore/qwebenginecookiestore.sip",
+    "Lib/site-packages/PyQt5/bindings/QtWebEngineCore/qwebenginefindtextresult.sip",
+    "Lib/site-packages/PyQt5/bindings/QtWebEngineCore/qwebenginehttprequest.sip",
+    "Lib/site-packages/PyQt5/bindings/QtWebEngineCore/qwebenginenotification.sip",
+    "Lib/site-packages/PyQt5/bindings/QtWebEngineCore/qwebenginequotarequest.sip",
+    "Lib/site-packages/PyQt5/bindings/QtWebEngineCore/qwebengineregisterprotocolhandlerrequest.sip",
+    "Lib/site-packages/PyQt5/bindings/QtWebEngineCore/qwebengineurlrequestinfo.sip",
+    "Lib/site-packages/PyQt5/bindings/QtWebEngineCore/qwebengineurlrequestinterceptor.sip",
+    "Lib/site-packages/PyQt5/bindings/QtWebEngineCore/qwebengineurlrequestjob.sip",
+    "Lib/site-packages/PyQt5/bindings/QtWebEngineCore/qwebengineurlscheme.sip",
+    "Lib/site-packages/PyQt5/bindings/QtWebEngineCore/qwebengineurlschemehandler.sip",
+    "Lib/site-packages/PyQt5/bindings/QtWebEngineWidgets/QtWebEngineWidgets.toml",
+    "Lib/site-packages/PyQt5/bindings/QtWebEngineWidgets/QtWebEngineWidgetsmod.sip",
+    "Lib/site-packages/PyQt5/bindings/QtWebEngineWidgets/qwebenginecertificateerror.sip",
+    "Lib/site-packages/PyQt5/bindings/QtWebEngineWidgets/qwebengineclientcertificateselection.sip",
+    "Lib/site-packages/PyQt5/bindings/QtWebEngineWidgets/qwebenginecontextmenudata.sip",
+    "Lib/site-packages/PyQt5/bindings/QtWebEngineWidgets/qwebenginedownloaditem.sip",
+    "Lib/site-packages/PyQt5/bindings/QtWebEngineWidgets/qwebenginefullscreenrequest.sip",
+    "Lib/site-packages/PyQt5/bindings/QtWebEngineWidgets/qwebenginehistory.sip",
+    "Lib/site-packages/PyQt5/bindings/QtWebEngineWidgets/qwebenginepage.sip",
+    "Lib/site-packages/PyQt5/bindings/QtWebEngineWidgets/qwebengineprofile.sip",
+    "Lib/site-packages/PyQt5/bindings/QtWebEngineWidgets/qwebenginescript.sip",
+    "Lib/site-packages/PyQt5/bindings/QtWebEngineWidgets/qwebenginescriptcollection.sip",
+    "Lib/site-packages/PyQt5/bindings/QtWebEngineWidgets/qwebenginesettings.sip",
+    "Lib/site-packages/PyQt5/bindings/QtWebEngineWidgets/qwebengineview.sip",
+    "Lib/site-packages/PyQtWebEngine-5.15.4.dist-info/INSTALLER",
+    "Lib/site-packages/PyQtWebEngine-5.15.4.dist-info/METADATA",
+    "Lib/site-packages/PyQtWebEngine-5.15.4.dist-info/RECORD",
+    ".nonadmin"
+  ],
+  "fn": "pyqtwebengine-5.15.7-py39h2f4a3f1_3.conda",
+  "license": "GPL-3.0-only",
+  "license_family": "GPL",
+  "link": {
+    "source": "C:\\Users\\Usuario\\anaconda3\\pkgs\\pyqtwebengine-5.15.7-py39h2f4a3f1_3",
+    "type": 1
+  },
+  "md5": "b1684dad9aee68c966da463b7b903dfa",
+  "name": "pyqtwebengine",
+  "package_tarball_full_path": "C:\\Users\\Usuario\\anaconda3\\pkgs\\pyqtwebengine-5.15.7-py39h2f4a3f1_3.conda",
+  "paths_data": {
+    "paths": [
+      {
+        "_path": "Lib/site-packages/PyQt5/QtWebEngine.pyd",
+        "path_type": "hardlink",
+        "sha256": "cb0160bca8a3ec7097bd678c5825369e30c03615a5415c7d7ea8f3a0650477c6",
+        "sha256_in_prefix": "cb0160bca8a3ec7097bd678c5825369e30c03615a5415c7d7ea8f3a0650477c6",
+        "size_in_bytes": 54272
+      },
+      {
+        "_path": "Lib/site-packages/PyQt5/QtWebEngineCore.pyd",
+        "path_type": "hardlink",
+        "sha256": "ae5ae70c958df00990900fc527748e8b2d07c34917924284403971c982746ac7",
+        "sha256_in_prefix": "ae5ae70c958df00990900fc527748e8b2d07c34917924284403971c982746ac7",
+        "size_in_bytes": 98816
+      },
+      {
+        "_path": "Lib/site-packages/PyQt5/QtWebEngineWidgets.pyd",
+        "path_type": "hardlink",
+        "sha256": "96e61c8a2f5ea1f587b36469ec2e597d060640878ea6baa7ea55919015fcdd19",
+        "sha256_in_prefix": "96e61c8a2f5ea1f587b36469ec2e597d060640878ea6baa7ea55919015fcdd19",
+        "size_in_bytes": 230912
+      },
+      {
+        "_path": "Lib/site-packages/PyQt5/bindings/QtWebEngine/QtWebEngine.toml",
+        "path_type": "hardlink",
+        "sha256": "de34f8e9f88612029dd702b74832c8b0c7088336f47186cb753c2d2a040b16b3",
+        "sha256_in_prefix": "de34f8e9f88612029dd702b74832c8b0c7088336f47186cb753c2d2a040b16b3",
+        "size_in_bytes": 208
+      },
+      {
+        "_path": "Lib/site-packages/PyQt5/bindings/QtWebEngine/QtWebEnginemod.sip",
+        "path_type": "hardlink",
+        "sha256": "96af52ce22db72324a1bfd1c22c18ff41fd5b15041a6273f483242460fa9074d",
+        "sha256_in_prefix": "96af52ce22db72324a1bfd1c22c18ff41fd5b15041a6273f483242460fa9074d",
+        "size_in_bytes": 2055
+      },
+      {
+        "_path": "Lib/site-packages/PyQt5/bindings/QtWebEngine/qquickwebengineprofile.sip",
+        "path_type": "hardlink",
+        "sha256": "9578c4ed1e5289dd85fd07f1ee1779c5ebdf25ba12cb8f4f69b6350c5170c776",
+        "sha256_in_prefix": "9578c4ed1e5289dd85fd07f1ee1779c5ebdf25ba12cb8f4f69b6350c5170c776",
+        "size_in_bytes": 5308
+      },
+      {
+        "_path": "Lib/site-packages/PyQt5/bindings/QtWebEngine/qquickwebenginescript.sip",
+        "path_type": "hardlink",
+        "sha256": "6cfeb49503e471b7be67356221b5791948220ec3abab7b065c096336af820e7c",
+        "sha256_in_prefix": "6cfeb49503e471b7be67356221b5791948220ec3abab7b065c096336af820e7c",
+        "size_in_bytes": 2464
+      },
+      {
+        "_path": "Lib/site-packages/PyQt5/bindings/QtWebEngine/qtwebengineglobal.sip",
+        "path_type": "hardlink",
+        "sha256": "2091af35dafb31b65deeb1aedb62df6810e5ea4bcdf826eb8507185f85620e84",
+        "sha256_in_prefix": "2091af35dafb31b65deeb1aedb62df6810e5ea4bcdf826eb8507185f85620e84",
+        "size_in_bytes": 1333
+      },
+      {
+        "_path": "Lib/site-packages/PyQt5/bindings/QtWebEngineCore/QtWebEngineCore.toml",
+        "path_type": "hardlink",
+        "sha256": "90df91dce3af969f0836be43d6f6955c2a87cbcf8eddbc921fb464b05cf975b7",
+        "sha256_in_prefix": "90df91dce3af969f0836be43d6f6955c2a87cbcf8eddbc921fb464b05cf975b7",
+        "size_in_bytes": 212
+      },
+      {
+        "_path": "Lib/site-packages/PyQt5/bindings/QtWebEngineCore/QtWebEngineCoremod.sip",
+        "path_type": "hardlink",
+        "sha256": "b271196279dd8cf653ad6e45c9f897c47b36a72ab1765e4a68f3c82be3a94b54",
+        "sha256_in_prefix": "b271196279dd8cf653ad6e45c9f897c47b36a72ab1765e4a68f3c82be3a94b54",
+        "size_in_bytes": 3283
+      },
+      {
+        "_path": "Lib/site-packages/PyQt5/bindings/QtWebEngineCore/qwebengineclientcertificatestore.sip",
+        "path_type": "hardlink",
+        "sha256": "2c4a3937fc6df293ff340a8f8f3720a927e2f6e51e6d9d065688045f4b867900",
+        "sha256_in_prefix": "2c4a3937fc6df293ff340a8f8f3720a927e2f6e51e6d9d065688045f4b867900",
+        "size_in_bytes": 1561
+      },
+      {
+        "_path": "Lib/site-packages/PyQt5/bindings/QtWebEngineCore/qwebenginecookiestore.sip",
+        "path_type": "hardlink",
+        "sha256": "1a61b98c7498f3dd76998925252bb65c7ba0947f85b026b9d63329716f307933",
+        "sha256_in_prefix": "1a61b98c7498f3dd76998925252bb65c7ba0947f85b026b9d63329716f307933",
+        "size_in_bytes": 4525
+      },
+      {
+        "_path": "Lib/site-packages/PyQt5/bindings/QtWebEngineCore/qwebenginefindtextresult.sip",
+        "path_type": "hardlink",
+        "sha256": "1d7abc60ab8ae3d41778209ec6414a983288c983a3b778dd4d2451bb801ad8be",
+        "sha256_in_prefix": "1d7abc60ab8ae3d41778209ec6414a983288c983a3b778dd4d2451bb801ad8be",
+        "size_in_bytes": 1314
+      },
+      {
+        "_path": "Lib/site-packages/PyQt5/bindings/QtWebEngineCore/qwebenginehttprequest.sip",
+        "path_type": "hardlink",
+        "sha256": "1abd36236f9d37a084f04180174a5afddcb9e2af46a7b08693ebebbfefbd913e",
+        "sha256_in_prefix": "1abd36236f9d37a084f04180174a5afddcb9e2af46a7b08693ebebbfefbd913e",
+        "size_in_bytes": 2197
+      },
+      {
+        "_path": "Lib/site-packages/PyQt5/bindings/QtWebEngineCore/qwebenginenotification.sip",
+        "path_type": "hardlink",
+        "sha256": "3061c6b9747123dd856938d02e4302d1c1aa1efe46499a6676fa0bc6a6855e9b",
+        "sha256_in_prefix": "3061c6b9747123dd856938d02e4302d1c1aa1efe46499a6676fa0bc6a6855e9b",
+        "size_in_bytes": 1558
+      },
+      {
+        "_path": "Lib/site-packages/PyQt5/bindings/QtWebEngineCore/qwebenginequotarequest.sip",
+        "path_type": "hardlink",
+        "sha256": "452e45ee3bf3d85a68517a475f96bcd4123b72c2a1ef6170544c988778e481a7",
+        "sha256_in_prefix": "452e45ee3bf3d85a68517a475f96bcd4123b72c2a1ef6170544c988778e481a7",
+        "size_in_bytes": 1487
+      },
+      {
+        "_path": "Lib/site-packages/PyQt5/bindings/QtWebEngineCore/qwebengineregisterprotocolhandlerrequest.sip",
+        "path_type": "hardlink",
+        "sha256": "ba9c6aa9aa22e0752b2a0c7dc3d33a5661db0429f5be39f896db5f6bd96c2ef9",
+        "sha256_in_prefix": "ba9c6aa9aa22e0752b2a0c7dc3d33a5661db0429f5be39f896db5f6bd96c2ef9",
+        "size_in_bytes": 1607
+      },
+      {
+        "_path": "Lib/site-packages/PyQt5/bindings/QtWebEngineCore/qwebengineurlrequestinfo.sip",
+        "path_type": "hardlink",
+        "sha256": "b0fb9963364a4f34780499d44871cfbb7a45748ab1e4cc7384b1c443027b27db",
+        "sha256_in_prefix": "b0fb9963364a4f34780499d44871cfbb7a45748ab1e4cc7384b1c443027b27db",
+        "size_in_bytes": 2844
+      },
+      {
+        "_path": "Lib/site-packages/PyQt5/bindings/QtWebEngineCore/qwebengineurlrequestinterceptor.sip",
+        "path_type": "hardlink",
+        "sha256": "d985ea923bf0033c40454ce9d07d5ff3159059c05e8a2823d79baa1a1fcd623c",
+        "sha256_in_prefix": "d985ea923bf0033c40454ce9d07d5ff3159059c05e8a2823d79baa1a1fcd623c",
+        "size_in_bytes": 1389
+      },
+      {
+        "_path": "Lib/site-packages/PyQt5/bindings/QtWebEngineCore/qwebengineurlrequestjob.sip",
+        "path_type": "hardlink",
+        "sha256": "540cdc58f46d68eaac607747daeb7d9b09190f0ec3cc47bcb7e2a8e85b387ee2",
+        "sha256_in_prefix": "540cdc58f46d68eaac607747daeb7d9b09190f0ec3cc47bcb7e2a8e85b387ee2",
+        "size_in_bytes": 1710
+      },
+      {
+        "_path": "Lib/site-packages/PyQt5/bindings/QtWebEngineCore/qwebengineurlscheme.sip",
+        "path_type": "hardlink",
+        "sha256": "9a59f4846231198204af4741f7d9fd45d0300f285e755f35796c17a5e9a4a9a3",
+        "sha256_in_prefix": "9a59f4846231198204af4741f7d9fd45d0300f285e755f35796c17a5e9a4a9a3",
+        "size_in_bytes": 2533
+      },
+      {
+        "_path": "Lib/site-packages/PyQt5/bindings/QtWebEngineCore/qwebengineurlschemehandler.sip",
+        "path_type": "hardlink",
+        "sha256": "ee60c03de04cad987865d9ce8e3107ab654ce84bfcee9f3039e8ae4fe6af277e",
+        "sha256_in_prefix": "ee60c03de04cad987865d9ce8e3107ab654ce84bfcee9f3039e8ae4fe6af277e",
+        "size_in_bytes": 1386
+      },
+      {
+        "_path": "Lib/site-packages/PyQt5/bindings/QtWebEngineWidgets/QtWebEngineWidgets.toml",
+        "path_type": "hardlink",
+        "sha256": "95fbcff81908c6a2ea4e56b9b9b11c06e1fefde287f5826c49d2d42b072c0ea4",
+        "sha256_in_prefix": "95fbcff81908c6a2ea4e56b9b9b11c06e1fefde287f5826c49d2d42b072c0ea4",
+        "size_in_bytes": 215
+      },
+      {
+        "_path": "Lib/site-packages/PyQt5/bindings/QtWebEngineWidgets/QtWebEngineWidgetsmod.sip",
+        "path_type": "hardlink",
+        "sha256": "5a85d1fda566235d6c09a481cbeb381f2c41a71757fe02998e5f29979c0d1d00",
+        "sha256_in_prefix": "5a85d1fda566235d6c09a481cbeb381f2c41a71757fe02998e5f29979c0d1d00",
+        "size_in_bytes": 3446
+      },
+      {
+        "_path": "Lib/site-packages/PyQt5/bindings/QtWebEngineWidgets/qwebenginecertificateerror.sip",
+        "path_type": "hardlink",
+        "sha256": "6876e7b5373147be5bc63e94fb8a23ea3be12a614f04e0cb7722ab898b576b59",
+        "sha256_in_prefix": "6876e7b5373147be5bc63e94fb8a23ea3be12a614f04e0cb7722ab898b576b59",
+        "size_in_bytes": 2582
+      },
+      {
+        "_path": "Lib/site-packages/PyQt5/bindings/QtWebEngineWidgets/qwebengineclientcertificateselection.sip",
+        "path_type": "hardlink",
+        "sha256": "0653c788600cdb7ec02810256a9901ff58fef04edc349f7cd0e1ddf6aca3be0c",
+        "sha256_in_prefix": "0653c788600cdb7ec02810256a9901ff58fef04edc349f7cd0e1ddf6aca3be0c",
+        "size_in_bytes": 1460
+      },
+      {
+        "_path": "Lib/site-packages/PyQt5/bindings/QtWebEngineWidgets/qwebenginecontextmenudata.sip",
+        "path_type": "hardlink",
+        "sha256": "ed90ce011a5d6165086289cd2fbd78cc5edad04369e90e2bfe28b96b1c54062e",
+        "sha256_in_prefix": "ed90ce011a5d6165086289cd2fbd78cc5edad04369e90e2bfe28b96b1c54062e",
+        "size_in_bytes": 3148
+      },
+      {
+        "_path": "Lib/site-packages/PyQt5/bindings/QtWebEngineWidgets/qwebenginedownloaditem.sip",
+        "path_type": "hardlink",
+        "sha256": "36866f8b139217ca867ede34fa114a6c850fe4c5397d4533bd8eb302a1d5c728",
+        "sha256_in_prefix": "36866f8b139217ca867ede34fa114a6c850fe4c5397d4533bd8eb302a1d5c728",
+        "size_in_bytes": 4185
+      },
+      {
+        "_path": "Lib/site-packages/PyQt5/bindings/QtWebEngineWidgets/qwebenginefullscreenrequest.sip",
+        "path_type": "hardlink",
+        "sha256": "13998b895052db10c48e9c0276607d358505da23e4ee6d14cf20dfe8cccd4fdd",
+        "sha256_in_prefix": "13998b895052db10c48e9c0276607d358505da23e4ee6d14cf20dfe8cccd4fdd",
+        "size_in_bytes": 1396
+      },
+      {
+        "_path": "Lib/site-packages/PyQt5/bindings/QtWebEngineWidgets/qwebenginehistory.sip",
+        "path_type": "hardlink",
+        "sha256": "1e3bb747bd9b01b79766bc2217bfc0f78cc397298bf25092bb10364c8c50a941",
+        "sha256_in_prefix": "1e3bb747bd9b01b79766bc2217bfc0f78cc397298bf25092bb10364c8c50a941",
+        "size_in_bytes": 2521
+      },
+      {
+        "_path": "Lib/site-packages/PyQt5/bindings/QtWebEngineWidgets/qwebenginepage.sip",
+        "path_type": "hardlink",
+        "sha256": "3dbe12137544a25a1f642cdaf66a6c2792bfde367619ee876646931e88f1b03c",
+        "sha256_in_prefix": "3dbe12137544a25a1f642cdaf66a6c2792bfde367619ee876646931e88f1b03c",
+        "size_in_bytes": 18317
+      },
+      {
+        "_path": "Lib/site-packages/PyQt5/bindings/QtWebEngineWidgets/qwebengineprofile.sip",
+        "path_type": "hardlink",
+        "sha256": "da308340eb3a7c9cce7a47422422cd8d96b83d7f33f40387e662a8f8f49c3e5c",
+        "sha256_in_prefix": "da308340eb3a7c9cce7a47422422cd8d96b83d7f33f40387e662a8f8f49c3e5c",
+        "size_in_bytes": 5993
+      },
+      {
+        "_path": "Lib/site-packages/PyQt5/bindings/QtWebEngineWidgets/qwebenginescript.sip",
+        "path_type": "hardlink",
+        "sha256": "04374b528dd8d671b759f24771bdb1f77d401ba9184a2e3c547b6b552dac565c",
+        "sha256_in_prefix": "04374b528dd8d671b759f24771bdb1f77d401ba9184a2e3c547b6b552dac565c",
+        "size_in_bytes": 1987
+      },
+      {
+        "_path": "Lib/site-packages/PyQt5/bindings/QtWebEngineWidgets/qwebenginescriptcollection.sip",
+        "path_type": "hardlink",
+        "sha256": "86d0729efaabb02fa700e434ed88ee29ca43fb718456887d6c973cf253de0c30",
+        "sha256_in_prefix": "86d0729efaabb02fa700e434ed88ee29ca43fb718456887d6c973cf253de0c30",
+        "size_in_bytes": 1684
+      },
+      {
+        "_path": "Lib/site-packages/PyQt5/bindings/QtWebEngineWidgets/qwebenginesettings.sip",
+        "path_type": "hardlink",
+        "sha256": "0756a11c5ad3a93ad2ae8b8813017e8405f178212513cc1f750ebc42cd44d451",
+        "sha256_in_prefix": "0756a11c5ad3a93ad2ae8b8813017e8405f178212513cc1f750ebc42cd44d451",
+        "size_in_bytes": 4448
+      },
+      {
+        "_path": "Lib/site-packages/PyQt5/bindings/QtWebEngineWidgets/qwebengineview.sip",
+        "path_type": "hardlink",
+        "sha256": "824ca9dc0d7b5c266cd36c48fb444b7413fe624a8789f27219b54122be217433",
+        "sha256_in_prefix": "824ca9dc0d7b5c266cd36c48fb444b7413fe624a8789f27219b54122be217433",
+        "size_in_bytes": 6279
+      },
+      {
+        "_path": "Lib/site-packages/PyQtWebEngine-5.15.4.dist-info/INSTALLER",
+        "path_type": "hardlink",
+        "sha256": "d0edee15f91b406f3f99726e44eb990be6e34fd0345b52b910c568e0eef6a2a8",
+        "sha256_in_prefix": "d0edee15f91b406f3f99726e44eb990be6e34fd0345b52b910c568e0eef6a2a8",
+        "size_in_bytes": 5
+      },
+      {
+        "_path": "Lib/site-packages/PyQtWebEngine-5.15.4.dist-info/METADATA",
+        "path_type": "hardlink",
+        "sha256": "17108b152b20943639ff8bd1b8b9abd48c9a7d33a8ff7d6f629ef841027996bf",
+        "sha256_in_prefix": "17108b152b20943639ff8bd1b8b9abd48c9a7d33a8ff7d6f629ef841027996bf",
+        "size_in_bytes": 1947
+      },
+      {
+        "_path": "Lib/site-packages/PyQtWebEngine-5.15.4.dist-info/RECORD",
+        "path_type": "hardlink",
+        "sha256": "0dc64d94ed3cd6b9326edc1b282809c4fee8dc74f458168bc4703b1a5f42a1cf",
+        "sha256_in_prefix": "0dc64d94ed3cd6b9326edc1b282809c4fee8dc74f458168bc4703b1a5f42a1cf",
+        "size_in_bytes": 4298
+      }
+    ],
+    "paths_version": 1
+  },
+  "requested_spec": "None",
+  "sha256": "4c5ea4c7f22e9d22190f3a5e6594bef05960f4af34003e03a8821eded5d6415b",
+  "size": 125440,
+  "subdir": "win-64",
+  "timestamp": 1674671589621,
+  "track_features": "",
+  "url": "https://conda.anaconda.org/conda-forge/win-64/pyqtwebengine-5.15.7-py39h2f4a3f1_3.conda",
+  "version": "5.15.7"
+}

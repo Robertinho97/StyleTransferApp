@@ -1,0 +1,123 @@
+{
+  "build": "hcfcfb64_0",
+  "build_number": 0,
+  "channel": "https://conda.anaconda.org/conda-forge/win-64",
+  "constrains": [],
+  "depends": [
+    "ucrt >=10.0.20348.0",
+    "vc >=14.2,<15",
+    "vs2015_runtime >=14.29.30139"
+  ],
+  "extracted_package_dir": "C:\\Users\\Usuario\\anaconda3\\pkgs\\libdeflate-1.17-hcfcfb64_0",
+  "features": "",
+  "files": [
+    "Library/bin/deflate.dll",
+    "Library/bin/libdeflate-gunzip.exe",
+    "Library/bin/libdeflate-gzip.exe",
+    "Library/include/libdeflate.h",
+    "Library/lib/cmake/libdeflate/libdeflate-config-version.cmake",
+    "Library/lib/cmake/libdeflate/libdeflate-config.cmake",
+    "Library/lib/cmake/libdeflate/libdeflate-targets-release.cmake",
+    "Library/lib/cmake/libdeflate/libdeflate-targets.cmake",
+    "Library/lib/deflate.lib",
+    "Library/lib/pkgconfig/libdeflate.pc",
+    ".nonadmin"
+  ],
+  "fn": "libdeflate-1.17-hcfcfb64_0.conda",
+  "license": "MIT",
+  "license_family": "MIT",
+  "link": {
+    "source": "C:\\Users\\Usuario\\anaconda3\\pkgs\\libdeflate-1.17-hcfcfb64_0",
+    "type": 1
+  },
+  "md5": "ae9dfb57bcb42093a2417aceabb530f7",
+  "name": "libdeflate",
+  "package_tarball_full_path": "C:\\Users\\Usuario\\anaconda3\\pkgs\\libdeflate-1.17-hcfcfb64_0.conda",
+  "paths_data": {
+    "paths": [
+      {
+        "_path": "Library/bin/deflate.dll",
+        "path_type": "hardlink",
+        "sha256": "6f6851a3be23ef37397ca02b3f44fb86fcf647b318a58a6fddc394c87d62867b",
+        "sha256_in_prefix": "6f6851a3be23ef37397ca02b3f44fb86fcf647b318a58a6fddc394c87d62867b",
+        "size_in_bytes": 173568
+      },
+      {
+        "_path": "Library/bin/libdeflate-gunzip.exe",
+        "path_type": "hardlink",
+        "sha256": "cc6ab7f7551076c85eed4027b9039847fe609ae18557fd3b357b69be425ce8f4",
+        "sha256_in_prefix": "cc6ab7f7551076c85eed4027b9039847fe609ae18557fd3b357b69be425ce8f4",
+        "size_in_bytes": 172544
+      },
+      {
+        "_path": "Library/bin/libdeflate-gzip.exe",
+        "path_type": "hardlink",
+        "sha256": "cc6ab7f7551076c85eed4027b9039847fe609ae18557fd3b357b69be425ce8f4",
+        "sha256_in_prefix": "cc6ab7f7551076c85eed4027b9039847fe609ae18557fd3b357b69be425ce8f4",
+        "size_in_bytes": 172544
+      },
+      {
+        "_path": "Library/include/libdeflate.h",
+        "path_type": "hardlink",
+        "sha256": "92f77df7c091f2ce5ddbf4ce5dcb000dcc7df63ffdf5109106c6fd60f8b18534",
+        "sha256_in_prefix": "92f77df7c091f2ce5ddbf4ce5dcb000dcc7df63ffdf5109106c6fd60f8b18534",
+        "size_in_bytes": 15748
+      },
+      {
+        "_path": "Library/lib/cmake/libdeflate/libdeflate-config-version.cmake",
+        "path_type": "hardlink",
+        "sha256": "a411196e5351ff686faeea504c5f786e5335f1409b190471d8aabe9e7191113e",
+        "sha256_in_prefix": "a411196e5351ff686faeea504c5f786e5335f1409b190471d8aabe9e7191113e",
+        "size_in_bytes": 2024
+      },
+      {
+        "_path": "Library/lib/cmake/libdeflate/libdeflate-config.cmake",
+        "path_type": "hardlink",
+        "sha256": "38872d2917fdd8b9acc643b06108e99ec4fe603e71055dfa6e84948578f0e5b8",
+        "sha256_in_prefix": "38872d2917fdd8b9acc643b06108e99ec4fe603e71055dfa6e84948578f0e5b8",
+        "size_in_bytes": 974
+      },
+      {
+        "_path": "Library/lib/cmake/libdeflate/libdeflate-targets-release.cmake",
+        "path_type": "hardlink",
+        "sha256": "61b947ca209a1405a0a9a36bec4cdd3e96f3f4ecf4f82e925fd12626661dd48a",
+        "sha256_in_prefix": "61b947ca209a1405a0a9a36bec4cdd3e96f3f4ecf4f82e925fd12626661dd48a",
+        "size_in_bytes": 985
+      },
+      {
+        "_path": "Library/lib/cmake/libdeflate/libdeflate-targets.cmake",
+        "file_mode": "text",
+        "path_type": "hardlink",
+        "prefix_placeholder": "D:/bld/libdeflate_1673785945037/_h_env",
+        "sha256": "5a8482e6c00cea7f1c3b1bad01f7d446bec1594a9d337825be36beadee12bdc9",
+        "sha256_in_prefix": "a39a7b7375bde84004f0c0edc4ebaf15cb1c355806e0b3d7f91371645117cfab",
+        "size_in_bytes": 4144
+      },
+      {
+        "_path": "Library/lib/deflate.lib",
+        "path_type": "hardlink",
+        "sha256": "9057b6f905b2bd8ee7f6fd9fe202da52e0fd850dcd4d022540e558354bfef0fc",
+        "sha256_in_prefix": "9057b6f905b2bd8ee7f6fd9fe202da52e0fd850dcd4d022540e558354bfef0fc",
+        "size_in_bytes": 6492
+      },
+      {
+        "_path": "Library/lib/pkgconfig/libdeflate.pc",
+        "file_mode": "text",
+        "path_type": "hardlink",
+        "prefix_placeholder": "D:/bld/libdeflate_1673785945037/_h_env",
+        "sha256": "b97b3452fb88e3bf8a22473bcb5c517ca0d0a21615136279f560b1854655c56e",
+        "sha256_in_prefix": "05ffcab09d985fbb99abcfcbc67cfe0e6ddba78b76d6c0efadf656952edcae0d",
+        "size_in_bytes": 820
+      }
+    ],
+    "paths_version": 1
+  },
+  "requested_spec": "None",
+  "sha256": "76e642ca8a11da1b537506447f8089353b6607956c069c938a4bec4de36e1194",
+  "size": 151946,
+  "subdir": "win-64",
+  "timestamp": 1673786168055,
+  "track_features": "",
+  "url": "https://conda.anaconda.org/conda-forge/win-64/libdeflate-1.17-hcfcfb64_0.conda",
+  "version": "1.17"
+}

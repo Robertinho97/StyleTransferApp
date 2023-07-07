@@ -1,0 +1,293 @@
+{
+  "build": "pyhd8ed1ab_0",
+  "build_number": 0,
+  "channel": "https://conda.anaconda.org/conda-forge/noarch",
+  "constrains": [],
+  "depends": [
+    "python >=3.7"
+  ],
+  "extracted_package_dir": "C:\\Users\\Usuario\\anaconda3\\pkgs\\textdistance-4.5.0-pyhd8ed1ab_0",
+  "features": "",
+  "files": [
+    "Lib/site-packages/textdistance-4.5.0.dist-info/INSTALLER",
+    "Lib/site-packages/textdistance-4.5.0.dist-info/LICENSE",
+    "Lib/site-packages/textdistance-4.5.0.dist-info/METADATA",
+    "Lib/site-packages/textdistance-4.5.0.dist-info/RECORD",
+    "Lib/site-packages/textdistance-4.5.0.dist-info/REQUESTED",
+    "Lib/site-packages/textdistance-4.5.0.dist-info/WHEEL",
+    "Lib/site-packages/textdistance-4.5.0.dist-info/direct_url.json",
+    "Lib/site-packages/textdistance-4.5.0.dist-info/top_level.txt",
+    "Lib/site-packages/textdistance/__init__.py",
+    "Lib/site-packages/textdistance/algorithms/__init__.py",
+    "Lib/site-packages/textdistance/algorithms/base.py",
+    "Lib/site-packages/textdistance/algorithms/compression_based.py",
+    "Lib/site-packages/textdistance/algorithms/edit_based.py",
+    "Lib/site-packages/textdistance/algorithms/phonetic.py",
+    "Lib/site-packages/textdistance/algorithms/sequence_based.py",
+    "Lib/site-packages/textdistance/algorithms/simple.py",
+    "Lib/site-packages/textdistance/algorithms/token_based.py",
+    "Lib/site-packages/textdistance/algorithms/types.py",
+    "Lib/site-packages/textdistance/algorithms/vector_based.py",
+    "Lib/site-packages/textdistance/benchmark.py",
+    "Lib/site-packages/textdistance/libraries.json",
+    "Lib/site-packages/textdistance/libraries.py",
+    "Lib/site-packages/textdistance/utils.py",
+    ".nonadmin",
+    "Lib/site-packages/textdistance/__pycache__/__init__.cpython-39.pyc",
+    "Lib/site-packages/textdistance/algorithms/__pycache__/__init__.cpython-39.pyc",
+    "Lib/site-packages/textdistance/algorithms/__pycache__/base.cpython-39.pyc",
+    "Lib/site-packages/textdistance/algorithms/__pycache__/compression_based.cpython-39.pyc",
+    "Lib/site-packages/textdistance/algorithms/__pycache__/edit_based.cpython-39.pyc",
+    "Lib/site-packages/textdistance/algorithms/__pycache__/phonetic.cpython-39.pyc",
+    "Lib/site-packages/textdistance/algorithms/__pycache__/sequence_based.cpython-39.pyc",
+    "Lib/site-packages/textdistance/algorithms/__pycache__/simple.cpython-39.pyc",
+    "Lib/site-packages/textdistance/algorithms/__pycache__/token_based.cpython-39.pyc",
+    "Lib/site-packages/textdistance/algorithms/__pycache__/types.cpython-39.pyc",
+    "Lib/site-packages/textdistance/algorithms/__pycache__/vector_based.cpython-39.pyc",
+    "Lib/site-packages/textdistance/__pycache__/benchmark.cpython-39.pyc",
+    "Lib/site-packages/textdistance/__pycache__/libraries.cpython-39.pyc",
+    "Lib/site-packages/textdistance/__pycache__/utils.cpython-39.pyc"
+  ],
+  "fn": "textdistance-4.5.0-pyhd8ed1ab_0.tar.bz2",
+  "license": "MIT",
+  "license_family": "MIT",
+  "link": {
+    "source": "C:\\Users\\Usuario\\anaconda3\\pkgs\\textdistance-4.5.0-pyhd8ed1ab_0",
+    "type": 1
+  },
+  "md5": "ce92028b55824f628a72937eb66e54a1",
+  "name": "textdistance",
+  "noarch": "python",
+  "package_tarball_full_path": "C:\\Users\\Usuario\\anaconda3\\pkgs\\textdistance-4.5.0-pyhd8ed1ab_0.tar.bz2",
+  "package_type": "noarch_python",
+  "paths_data": {
+    "paths": [
+      {
+        "_path": "site-packages/textdistance-4.5.0.dist-info/INSTALLER",
+        "path_type": "hardlink",
+        "sha256": "d0edee15f91b406f3f99726e44eb990be6e34fd0345b52b910c568e0eef6a2a8",
+        "sha256_in_prefix": "d0edee15f91b406f3f99726e44eb990be6e34fd0345b52b910c568e0eef6a2a8",
+        "size_in_bytes": 5
+      },
+      {
+        "_path": "site-packages/textdistance-4.5.0.dist-info/LICENSE",
+        "path_type": "hardlink",
+        "sha256": "a0e57f3899f173db90cde68c69b07eaea57c1ad8be4359105eeb0f805c681092",
+        "sha256_in_prefix": "a0e57f3899f173db90cde68c69b07eaea57c1ad8be4359105eeb0f805c681092",
+        "size_in_bytes": 1049
+      },
+      {
+        "_path": "site-packages/textdistance-4.5.0.dist-info/METADATA",
+        "path_type": "hardlink",
+        "sha256": "810a39c69d3fc380ae1cc6b53ea7c1fba7d6a6a0cfe5cffe1e3332fa6e9eac70",
+        "sha256_in_prefix": "810a39c69d3fc380ae1cc6b53ea7c1fba7d6a6a0cfe5cffe1e3332fa6e9eac70",
+        "size_in_bytes": 18843
+      },
+      {
+        "_path": "site-packages/textdistance-4.5.0.dist-info/RECORD",
+        "path_type": "hardlink",
+        "sha256": "4a0e7829e072242aa35821e030af91a667b5f9bbffa7f424de975281cc490ef6",
+        "sha256_in_prefix": "4a0e7829e072242aa35821e030af91a667b5f9bbffa7f424de975281cc490ef6",
+        "size_in_bytes": 2924
+      },
+      {
+        "_path": "site-packages/textdistance-4.5.0.dist-info/REQUESTED",
+        "path_type": "hardlink",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "sha256_in_prefix": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "size_in_bytes": 0
+      },
+      {
+        "_path": "site-packages/textdistance-4.5.0.dist-info/WHEEL",
+        "path_type": "hardlink",
+        "sha256": "1b5e87e00dc87a84269cead8578b9e6462928e18a95f1f3373c9eef451a5bcc0",
+        "sha256_in_prefix": "1b5e87e00dc87a84269cead8578b9e6462928e18a95f1f3373c9eef451a5bcc0",
+        "size_in_bytes": 92
+      },
+      {
+        "_path": "site-packages/textdistance-4.5.0.dist-info/direct_url.json",
+        "path_type": "hardlink",
+        "sha256": "bfc3189ea4bc87344754c4900ecbbc1ee45e1737cbf64dd1f214ec1e8c52b1eb",
+        "sha256_in_prefix": "bfc3189ea4bc87344754c4900ecbbc1ee45e1737cbf64dd1f214ec1e8c52b1eb",
+        "size_in_bytes": 108
+      },
+      {
+        "_path": "site-packages/textdistance-4.5.0.dist-info/top_level.txt",
+        "path_type": "hardlink",
+        "sha256": "18122c2cd6b7a5c6da3d2a7c28dabddd8747284dc234840c42b2eb65d79cb5a9",
+        "sha256_in_prefix": "18122c2cd6b7a5c6da3d2a7c28dabddd8747284dc234840c42b2eb65d79cb5a9",
+        "size_in_bytes": 13
+      },
+      {
+        "_path": "site-packages/textdistance/__init__.py",
+        "path_type": "hardlink",
+        "sha256": "fae054782438bb58e87d840e2e190ee50944e9c32912353c9392076767c1864b",
+        "sha256_in_prefix": "fae054782438bb58e87d840e2e190ee50944e9c32912353c9392076767c1864b",
+        "size_in_bytes": 355
+      },
+      {
+        "_path": "site-packages/textdistance/algorithms/__init__.py",
+        "path_type": "hardlink",
+        "sha256": "d6b69a80319c8077a703e35c8f7a0a1d30a4d1a8bc96d2dda90cd303ffdc9648",
+        "sha256_in_prefix": "d6b69a80319c8077a703e35c8f7a0a1d30a4d1a8bc96d2dda90cd303ffdc9648",
+        "size_in_bytes": 217
+      },
+      {
+        "_path": "site-packages/textdistance/algorithms/base.py",
+        "path_type": "hardlink",
+        "sha256": "d530fe36991c90cb93f524a61235c043e02ec21457bb617d5ae6dcb28eafcb1a",
+        "sha256_in_prefix": "d530fe36991c90cb93f524a61235c043e02ec21457bb617d5ae6dcb28eafcb1a",
+        "size_in_bytes": 6333
+      },
+      {
+        "_path": "site-packages/textdistance/algorithms/compression_based.py",
+        "path_type": "hardlink",
+        "sha256": "89c4eee04fac6259b548a947163acab00b74b6b18511459140d60d513305fe0b",
+        "sha256_in_prefix": "89c4eee04fac6259b548a947163acab00b74b6b18511459140d60d513305fe0b",
+        "size_in_bytes": 8243
+      },
+      {
+        "_path": "site-packages/textdistance/algorithms/edit_based.py",
+        "path_type": "hardlink",
+        "sha256": "3cdf5864ab63a0bdcd7861fa8157adcfdc9e83a75e0f0680a6411a0bcd8c6f24",
+        "sha256_in_prefix": "3cdf5864ab63a0bdcd7861fa8157adcfdc9e83a75e0f0680a6411a0bcd8c6f24",
+        "size_in_bytes": 27577
+      },
+      {
+        "_path": "site-packages/textdistance/algorithms/phonetic.py",
+        "path_type": "hardlink",
+        "sha256": "45b20e92f21f33d7a6abbd99ccfe94d8e5009baa82c473767ad0704eee098bda",
+        "sha256_in_prefix": "45b20e92f21f33d7a6abbd99ccfe94d8e5009baa82c473767ad0704eee098bda",
+        "size_in_bytes": 6138
+      },
+      {
+        "_path": "site-packages/textdistance/algorithms/sequence_based.py",
+        "path_type": "hardlink",
+        "sha256": "eab5987af326719e27cf30968e42fc56ad3dcebe4d366858a1d8d775d104d549",
+        "sha256_in_prefix": "eab5987af326719e27cf30968e42fc56ad3dcebe4d366858a1d8d775d104d549",
+        "size_in_bytes": 6126
+      },
+      {
+        "_path": "site-packages/textdistance/algorithms/simple.py",
+        "path_type": "hardlink",
+        "sha256": "67b0aa88babf8de64436eb1fda58d990a06bf7e503c882e5e2446c26138a9885",
+        "sha256_in_prefix": "67b0aa88babf8de64436eb1fda58d990a06bf7e503c882e5e2446c26138a9885",
+        "size_in_bytes": 3207
+      },
+      {
+        "_path": "site-packages/textdistance/algorithms/token_based.py",
+        "path_type": "hardlink",
+        "sha256": "dab5d3a6892b270b76973ea3208b0ed34d579407d2fc201fb2e02dc031cf414e",
+        "sha256_in_prefix": "dab5d3a6892b270b76973ea3208b0ed34d579407d2fc201fb2e02dc031cf414e",
+        "size_in_bytes": 9404
+      },
+      {
+        "_path": "site-packages/textdistance/algorithms/types.py",
+        "path_type": "hardlink",
+        "sha256": "4f1e4e3e5b9c6d3a4228afb1d13d4a6ad8f622f08812e0f629b4903f475def48",
+        "sha256_in_prefix": "4f1e4e3e5b9c6d3a4228afb1d13d4a6ad8f622f08812e0f629b4903f475def48",
+        "size_in_bytes": 155
+      },
+      {
+        "_path": "site-packages/textdistance/algorithms/vector_based.py",
+        "path_type": "hardlink",
+        "sha256": "f9994634c167f347ab23a3d4a5a3a2fc7005bce07a581bb6fd29145708a754e9",
+        "sha256_in_prefix": "f9994634c167f347ab23a3d4a5a3a2fc7005bce07a581bb6fd29145708a754e9",
+        "size_in_bytes": 2806
+      },
+      {
+        "_path": "site-packages/textdistance/benchmark.py",
+        "path_type": "hardlink",
+        "sha256": "52a4b7ee28c5bd89b4f8aefc65f55001aa5486c492e732ee8bb064526c714517",
+        "sha256_in_prefix": "52a4b7ee28c5bd89b4f8aefc65f55001aa5486c492e732ee8bb064526c714517",
+        "size_in_bytes": 3817
+      },
+      {
+        "_path": "site-packages/textdistance/libraries.json",
+        "path_type": "hardlink",
+        "sha256": "08c580443097b1b29b88e7f3ab9f93e30d8f3c65d04fd7bcc76669fadc69fc96",
+        "sha256_in_prefix": "08c580443097b1b29b88e7f3ab9f93e30d8f3c65d04fd7bcc76669fadc69fc96",
+        "size_in_bytes": 1279
+      },
+      {
+        "_path": "site-packages/textdistance/libraries.py",
+        "path_type": "hardlink",
+        "sha256": "da504e2bd1d9479a54784bee90c15790689e9b5ec700408c0d7c92c9e6b49abf",
+        "sha256_in_prefix": "da504e2bd1d9479a54784bee90c15790689e9b5ec700408c0d7c92c9e6b49abf",
+        "size_in_bytes": 6972
+      },
+      {
+        "_path": "site-packages/textdistance/utils.py",
+        "path_type": "hardlink",
+        "sha256": "4b0724b0c5a212f0e0588bba3d82ee4fc67ea46f3d5716c0be89018cdfbee3bf",
+        "sha256_in_prefix": "4b0724b0c5a212f0e0588bba3d82ee4fc67ea46f3d5716c0be89018cdfbee3bf",
+        "size_in_bytes": 782
+      },
+      {
+        "_path": "Lib/site-packages/textdistance/__pycache__/__init__.cpython-39.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "Lib/site-packages/textdistance/algorithms/__pycache__/__init__.cpython-39.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "Lib/site-packages/textdistance/algorithms/__pycache__/base.cpython-39.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "Lib/site-packages/textdistance/algorithms/__pycache__/compression_based.cpython-39.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "Lib/site-packages/textdistance/algorithms/__pycache__/edit_based.cpython-39.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "Lib/site-packages/textdistance/algorithms/__pycache__/phonetic.cpython-39.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "Lib/site-packages/textdistance/algorithms/__pycache__/sequence_based.cpython-39.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "Lib/site-packages/textdistance/algorithms/__pycache__/simple.cpython-39.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "Lib/site-packages/textdistance/algorithms/__pycache__/token_based.cpython-39.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "Lib/site-packages/textdistance/algorithms/__pycache__/types.cpython-39.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "Lib/site-packages/textdistance/algorithms/__pycache__/vector_based.cpython-39.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "Lib/site-packages/textdistance/__pycache__/benchmark.cpython-39.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "Lib/site-packages/textdistance/__pycache__/libraries.cpython-39.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "Lib/site-packages/textdistance/__pycache__/utils.cpython-39.pyc",
+        "path_type": "pyc_file"
+      }
+    ],
+    "paths_version": 1
+  },
+  "requested_spec": "None",
+  "sha256": "cd6161412f03a5ef581665ace58f8a68982179f743318cbeadb2284614d2c303",
+  "size": 28753,
+  "subdir": "noarch",
+  "timestamp": 1663527609200,
+  "track_features": "",
+  "url": "https://conda.anaconda.org/conda-forge/noarch/textdistance-4.5.0-pyhd8ed1ab_0.tar.bz2",
+  "version": "4.5.0"
+}

@@ -1,0 +1,40 @@
+{
+  "build": "pyhd8ed1ab_0",
+  "build_number": 0,
+  "channel": "https://conda.anaconda.org/conda-forge/noarch",
+  "constrains": [],
+  "depends": [
+    "nbconvert-core 7.4.0 pyhd8ed1ab_0",
+    "nbconvert-pandoc 7.4.0 pyhd8ed1ab_0",
+    "python >=3.7"
+  ],
+  "extracted_package_dir": "C:\\Users\\Usuario\\anaconda3\\pkgs\\nbconvert-7.4.0-pyhd8ed1ab_0",
+  "features": "",
+  "files": [
+    ".nonadmin"
+  ],
+  "fn": "nbconvert-7.4.0-pyhd8ed1ab_0.conda",
+  "license": "BSD-3-Clause",
+  "license_family": "BSD",
+  "link": {
+    "source": "C:\\Users\\Usuario\\anaconda3\\pkgs\\nbconvert-7.4.0-pyhd8ed1ab_0",
+    "type": 1
+  },
+  "md5": "a86727968b41c20dd3d73b91632e77dc",
+  "name": "nbconvert",
+  "noarch": "python",
+  "package_tarball_full_path": "C:\\Users\\Usuario\\anaconda3\\pkgs\\nbconvert-7.4.0-pyhd8ed1ab_0.conda",
+  "package_type": "noarch_python",
+  "paths_data": {
+    "paths": [],
+    "paths_version": 1
+  },
+  "requested_spec": "None",
+  "sha256": "9123d4ba64b3165dcfb812c5524420fb2a75dd6f82018a5597605da489fe57d3",
+  "size": 7785,
+  "subdir": "noarch",
+  "timestamp": 1683636445044,
+  "track_features": "",
+  "url": "https://conda.anaconda.org/conda-forge/noarch/nbconvert-7.4.0-pyhd8ed1ab_0.conda",
+  "version": "7.4.0"
+}

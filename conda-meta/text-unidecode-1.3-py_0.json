@@ -1,0 +1,108 @@
+{
+  "build": "py_0",
+  "build_number": 0,
+  "channel": "https://conda.anaconda.org/conda-forge/noarch",
+  "constrains": [],
+  "depends": [
+    "python"
+  ],
+  "extracted_package_dir": "C:\\Users\\Usuario\\anaconda3\\pkgs\\text-unidecode-1.3-py_0",
+  "features": "",
+  "files": [
+    "Lib/site-packages/text_unidecode-1.3.dist-info/INSTALLER",
+    "Lib/site-packages/text_unidecode-1.3.dist-info/LICENSE",
+    "Lib/site-packages/text_unidecode-1.3.dist-info/METADATA",
+    "Lib/site-packages/text_unidecode-1.3.dist-info/RECORD",
+    "Lib/site-packages/text_unidecode-1.3.dist-info/WHEEL",
+    "Lib/site-packages/text_unidecode-1.3.dist-info/top_level.txt",
+    "Lib/site-packages/text_unidecode/__init__.py",
+    "Lib/site-packages/text_unidecode/data.bin",
+    ".nonadmin",
+    "Lib/site-packages/text_unidecode/__pycache__/__init__.cpython-39.pyc"
+  ],
+  "fn": "text-unidecode-1.3-py_0.tar.bz2",
+  "license": "Artistic",
+  "license_family": "OTHER",
+  "link": {
+    "source": "C:\\Users\\Usuario\\anaconda3\\pkgs\\text-unidecode-1.3-py_0",
+    "type": 1
+  },
+  "md5": "afcf07cba949f797ac96c5e13e745cc7",
+  "name": "text-unidecode",
+  "noarch": "python",
+  "package_tarball_full_path": "C:\\Users\\Usuario\\anaconda3\\pkgs\\text-unidecode-1.3-py_0.tar.bz2",
+  "package_type": "noarch_python",
+  "paths_data": {
+    "paths": [
+      {
+        "_path": "site-packages/text_unidecode-1.3.dist-info/INSTALLER",
+        "path_type": "hardlink",
+        "sha256": "d0edee15f91b406f3f99726e44eb990be6e34fd0345b52b910c568e0eef6a2a8",
+        "sha256_in_prefix": "d0edee15f91b406f3f99726e44eb990be6e34fd0345b52b910c568e0eef6a2a8",
+        "size_in_bytes": 5
+      },
+      {
+        "_path": "site-packages/text_unidecode-1.3.dist-info/LICENSE",
+        "path_type": "hardlink",
+        "sha256": "3938e7535c3e4ef7e6363de9b693fe3bafe3c4a5e5f4925cd48375096fe7afd5",
+        "sha256_in_prefix": "3938e7535c3e4ef7e6363de9b693fe3bafe3c4a5e5f4925cd48375096fe7afd5",
+        "size_in_bytes": 6535
+      },
+      {
+        "_path": "site-packages/text_unidecode-1.3.dist-info/METADATA",
+        "path_type": "hardlink",
+        "sha256": "47c38ad5f2f96aac19cb85bae467ef25ad6d56d87f11fb3bd4d22fe8c225ddef",
+        "sha256_in_prefix": "47c38ad5f2f96aac19cb85bae467ef25ad6d56d87f11fb3bd4d22fe8c225ddef",
+        "size_in_bytes": 2422
+      },
+      {
+        "_path": "site-packages/text_unidecode-1.3.dist-info/RECORD",
+        "path_type": "hardlink",
+        "sha256": "df56735b17a680e66934e581a105763872aba76a0dc03284e1ffd2880da5a58b",
+        "sha256_in_prefix": "df56735b17a680e66934e581a105763872aba76a0dc03284e1ffd2880da5a58b",
+        "size_in_bytes": 707
+      },
+      {
+        "_path": "site-packages/text_unidecode-1.3.dist-info/WHEEL",
+        "path_type": "hardlink",
+        "sha256": "f3335865bc10497a01f487d73a33df78dc2f02c00b0237df824dbb16abc259ba",
+        "sha256_in_prefix": "f3335865bc10497a01f487d73a33df78dc2f02c00b0237df824dbb16abc259ba",
+        "size_in_bytes": 110
+      },
+      {
+        "_path": "site-packages/text_unidecode-1.3.dist-info/top_level.txt",
+        "path_type": "hardlink",
+        "sha256": "4901fd4918d694bac3f97807c9038fb43420fc3681b771adea188c48dc076ee1",
+        "sha256_in_prefix": "4901fd4918d694bac3f97807c9038fb43420fc3681b771adea188c48dc076ee1",
+        "size_in_bytes": 15
+      },
+      {
+        "_path": "site-packages/text_unidecode/__init__.py",
+        "path_type": "hardlink",
+        "sha256": "fe1112aa5bc647f713cb4a2bc8fba8cab567b42388203edb1c303ecb6d88d628",
+        "sha256_in_prefix": "fe1112aa5bc647f713cb4a2bc8fba8cab567b42388203edb1c303ecb6d88d628",
+        "size_in_bytes": 484
+      },
+      {
+        "_path": "site-packages/text_unidecode/data.bin",
+        "path_type": "hardlink",
+        "sha256": "7924666da4ce0ad24d4b8142b330e6d8e89465cd883934724cd9e4b7d8130f09",
+        "sha256_in_prefix": "7924666da4ce0ad24d4b8142b330e6d8e89465cd883934724cd9e4b7d8130f09",
+        "size_in_bytes": 311077
+      },
+      {
+        "_path": "Lib/site-packages/text_unidecode/__pycache__/__init__.cpython-39.pyc",
+        "path_type": "pyc_file"
+      }
+    ],
+    "paths_version": 1
+  },
+  "requested_spec": "None",
+  "sha256": "232b434fdf612933e35d3bb087a1fb268ce7cc1ff3e7b742c327c23e19eaefb6",
+  "size": 69569,
+  "subdir": "noarch",
+  "timestamp": 1570718534742,
+  "track_features": "",
+  "url": "https://conda.anaconda.org/conda-forge/noarch/text-unidecode-1.3-py_0.tar.bz2",
+  "version": "1.3"
+}
