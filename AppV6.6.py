@@ -12,11 +12,25 @@ import tensorflow as tf
 from tkinter import ttk
 
 
-
+from IPython.display import  display
 
 img_nrows = 256
 img_ncols = 256
 
+total_variation_weight = 1e-6
+style_weight = 1e-6
+content_weight = 2.5e-8
+
+style_layer_names = [
+        "block1_conv1",
+        "block2_conv1",
+        "block3_conv1",
+        "block4_conv1",
+        "block5_conv1",
+    ]
+    
+# The layer to use for the content loss.
+content_layer_name = "block5_conv2"
 
 class MainScreen(tk.Frame):
     
@@ -238,14 +252,15 @@ class MainScreen(tk.Frame):
 
 
     def confirm(self):
-        loading_screen = LoadingScreen(self)
         if self.cropped_image:
             image_path = "cropped_image.png"  # Ruta de archivo temporal para la imagen recortada
             self.cropped_image.save(image_path)  # Guardar la imagen recortada en un archivo temporal
         else:
             image_path = "uploaded_image.png"  # Ruta de archivo temporal para la imagen cargada
             self.image.save(image_path)  # Guardar la imagen cargada en un archivo temporal
-        loading_screen.start_process(image_path)
+        
+        loading_screen = LoadingScreen(self)
+        
         self.destroy()
 
 
@@ -271,39 +286,43 @@ class LoadingScreen(tk.Frame):
 
     def start_process(self):
         # Obtén la imagen seleccionada por el usuario
-        input_image = self.master.cropped_image if self.master.cropped_image else self.master.image
+        input_image = Image.open("torres.jpeg") # self.master.cropped_image if self.master.cropped_image else self.master.image
+        input_image_path= "torres.jpeg"
         
-        # Carga el modelo de style transfer
-        model = keras.models.load_model("modeloGritoFinal.h5")
+        image_path = "uploaded_image.png" # cropped_image.png" if self.master.cropped_image else "uploaded_image.png"    
         
         # Obtén la ruta del archivo de imagen
-        image_path = "cropped_image.png" if self.master.cropped_image else "uploaded_image.png"
         input_image.save(image_path)  # Guardar la imagen en un archivo temporal
         
         # Preprocesa la imagen de entrada para adaptarla al formato requerido por el modelo
-        preprocessed_image = self.preprocess_image(image_path)
+        # preprocessed_image = self.preprocess_image(image_path)
+        # preprocessed_image_path="preprocessed_image.png"
+        # preprocessed_image.save(preprocessed_image_path)
+        
         
         # Aplica el estilo artístico a la imagen mediante la transferencia de estilo
         # stylized_image = model.predict(preprocessed_image)
         
         
         style_transfer = StyleTransfer()
-        content_image_path = preprocessed_image
         style_image_path = "model3.png"
-        output_image = style_transfer.aplica_estilo(image_path, style_image_path, 50000)
-        output_image.save("result4.png")
+        output_image = style_transfer.aplica_estilo(image_path, input_image_path, style_image_path, 500)
+        # output_image.save("result.png")
 
 
         #deprocessed_image = Image.open('ruta_de_tu_imagen_deprocesada.jpg')
-        # deprocessed_image = self.deprocess_image(output_image)
-        # output_image = np.squeeze(output_image, axis=0)  # Elimina la dimensión adicional del lote
+        # 
+        output_image = np.squeeze(output_image, axis=0)  # Elimina la dimensión adicional del lote
         
-        # print(deprocessed_image.shape)
+        print(output_image.shape)
         
-        # output_image = Image.fromarray(deprocessed_image)
+        deprocessed_image = deprocess_image(output_image)
+        
+        final_image = Image.fromarray(deprocessed_image)
+        final_image.save("result.png")
         # output_path = "imagen_estilizada.png"
         
-        
+        display(final_image)
         
         
         # # Guarda la imagen estilizada en un archivo
@@ -319,32 +338,6 @@ class LoadingScreen(tk.Frame):
         # Muestra la pantalla de resultados
         self.result_screen = ResultScreen(self.master)
         self.destroy()
-    
-    @staticmethod
-    def preprocess_image(image_path):
-        img = keras.preprocessing.image.load_img(
-            image_path, target_size=(img_nrows, img_ncols)
-        )
-        img = keras.preprocessing.image.img_to_array(img)
-        img = np.expand_dims(img, axis=0)
-        img = vgg19.preprocess_input(img)
-        return img
-    
-    @staticmethod
-    def deprocess_image(x):
-        
-        x = x.reshape((img_nrows, img_ncols, 3)).astype("float64")
-        # Reajusta la imagen a su rango original
-        x[:, :, 0] += 103.939
-        x[:, :, 1] += 116.779
-        x[:, :, 2] += 123.68
-        # Convierte de BGR a RGB
-        x = x[:, :, ::-1]
-        # Asegúrate de que los valores estén en el rango de 0 a 255
-        x = np.clip(x, 0, 255).astype("uint8")
-        return x
-
-
 
 class StyleTransfer:
     def __init__(self, img_nrows=256, img_ncols=256):
@@ -365,99 +358,150 @@ class StyleTransfer:
         self.feature_extractor = None
         self.optimizer = None
 
-    def preprocess_image(self, image_path):
-        img = keras.preprocessing.image.load_img(
-            image_path, target_size=(self.img_nrows, self.img_ncols)
+     #debe entrenarse en base a la imagen sino es muy dificil
+    def aplica_estilo(self, image_path, input_image_path, model_path,iterations):
+         
+        # Build a VGG19 model loaded with pre-trained ImageNet weights
+        model = vgg19.VGG19(weights="imagenet", include_top=False)
+
+        # Get the symbolic outputs of each "key" layer (we gave them unique names).
+        outputs_dict = dict([(layer.name, layer.output) for layer in model.layers])
+
+        # Set up a model that returns the activation values for every layer in
+        # VGG19 (as a dict).
+        feature_extractor = keras.Model(inputs=model.inputs, outputs=outputs_dict)
+
+        # List of layers to use for the style loss.
+        style_layer_names = [
+             "block1_conv1",
+             "block2_conv1",
+             "block3_conv1",
+             "block4_conv1",
+             "block5_conv1",
+        ]
+        # The layer to use for the content loss.
+        content_layer_name = "block5_conv2"
+         
+        optimizer = keras.optimizers.SGD(
+            keras.optimizers.schedules.ExponentialDecay(
+            initial_learning_rate=100.0, decay_steps=100, decay_rate=0.96)
         )
-        img = keras.preprocessing.image.img_to_array(img)
-        img = np.expand_dims(img, axis=0)
-        img = vgg19.preprocess_input(img)
-        return tf.convert_to_tensor(img)
 
-    def deprocess_image(self, x):
-        x = x.reshape((self.img_nrows, self.img_ncols, 3))
-        x[:, :, 0] += 103.939
-        x[:, :, 1] += 116.779
-        x[:, :, 2] += 123.68
-        x = x[:, :, ::-1]
-        x = np.clip(x, 0, 255).astype("uint8")
-        return x
+        base_image = preprocess_image(image_path)
+        style_reference_image = preprocess_image(model_path)
+        combination_image = tf.Variable(preprocess_image(input_image_path))
 
-    def gram_matrix(self, x):
-        x = tf.transpose(x, (2, 0, 1))
-        features = tf.reshape(x, (tf.shape(x)[0], -1))
-        gram = tf.matmul(features, tf.transpose(features))
-        return gram
+        if iterations<100:
+            iterations= 100
+             
+        for i in range(1, iterations + 1):
+            loss, grads = compute_loss_and_grads(feature_extractor,
+               combination_image, base_image, style_reference_image)
+            optimizer.apply_gradients([(grads, combination_image)])
+            
+        return combination_image
+    
 
-    def style_loss(self, style, combination):
-        S = self.gram_matrix(style)
-        C = self.gram_matrix(combination)
-        channels = 3
-        size = self.img_nrows * self.img_ncols
-        return tf.reduce_sum(tf.square(S - C)) / (4.0 * (channels ** 2) * (size ** 2))
+def preprocess_image(image_path):
+    # Util function to open, resize and format pictures into appropriate tensors
+    img = keras.preprocessing.image.load_img(
+        image_path, target_size=(img_nrows, img_ncols)
+    )
+    img = keras.preprocessing.image.img_to_array(img)
+    img = np.expand_dims(img, axis=0)
+    img = vgg19.preprocess_input(img)
+    return tf.convert_to_tensor(img)
 
-    def content_loss(self, base, combination):
-        return tf.reduce_sum(tf.square(combination - base))
 
-    def total_variation_loss(self, x):
-        a = tf.square(x[:, : self.img_nrows - 1, : self.img_ncols - 1, :] - x[:, 1:, : self.img_ncols - 1, :])
-        b = tf.square(x[:, : self.img_nrows - 1, : self.img_ncols - 1, :] - x[:, : self.img_nrows - 1, 1:, :])
-        return tf.reduce_sum(tf.pow(a + b, 1.25))
 
-    def compute_loss(self, combination_image, base_image, style_reference_image):
-        input_tensor = tf.concat([base_image, style_reference_image, combination_image], axis=0)
-        features = self.feature_extractor(input_tensor)
+def deprocess_image(x):
+    # Util function to convert a tensor into a valid image
+    x = x.reshape((img_nrows, img_ncols, 3))
+    # Remove zero-center by mean pixel
+    x[:, :, 0] += 103.939
+    x[:, :, 1] += 116.779
+    x[:, :, 2] += 123.68
+    # 'BGR'->'RGB'
+    x = x[:, :, ::-1]
+    x = np.clip(x, 0, 255).astype("uint8")
+    return x
 
-        loss = tf.zeros(shape=())
+#utileria necesaria para el entrenamiento
+# The gram matrix of an image tensor (feature-wise outer product)
+def gram_matrix(x):
+    x = tf.transpose(x, (2, 0, 1))
+    features = tf.reshape(x, (tf.shape(x)[0], -1))
+    gram = tf.matmul(features, tf.transpose(features))
+    return gram
 
-        layer_features = features[self.content_layer_name]
-        base_image_features = layer_features[0, :, :, :]
+
+# The "style loss" is designed to maintain
+# the style of the reference image in the generated image.
+# It is based on the gram matrices (which capture style) of
+# feature maps from the style reference image
+# and from the generated image
+def style_loss(style, combination):
+    S = gram_matrix(style)
+    C = gram_matrix(combination)
+    channels = 3
+    size = img_nrows * img_ncols
+    return tf.reduce_sum(tf.square(S - C)) / (4.0 * (channels**2) * (size**2))
+
+
+# An auxiliary loss function
+# designed to maintain the "content" of the
+# base image in the generated image
+def content_loss(base, combination):
+    return tf.reduce_sum(tf.square(combination - base))
+
+# The 3rd loss function, total variation loss,
+# designed to keep the generated image locally coherent
+def total_variation_loss(x):
+    a = tf.square(
+        x[:, : img_nrows - 1, : img_ncols - 1, :] - x[:, 1:, : img_ncols - 1, :]
+    )
+    b = tf.square(
+        x[:, : img_nrows - 1, : img_ncols - 1, :] - x[:, : img_nrows - 1, 1:, :]
+    )
+    return tf.reduce_sum(tf.pow(a + b, 1.25))
+
+
+
+def compute_loss(feature_extractor,combination_image, base_image, style_reference_image):
+    input_tensor = tf.concat(
+        [base_image, style_reference_image, combination_image], axis=0
+    )
+    features = feature_extractor(input_tensor)
+
+    # Initialize the loss
+    loss = tf.zeros(shape=())
+
+    # Add content loss
+    layer_features = features[content_layer_name]
+    base_image_features = layer_features[0, :, :, :]
+    combination_features = layer_features[2, :, :, :]
+    loss = loss + content_weight * content_loss(
+        base_image_features, combination_features
+    )
+    # Add style loss
+    for layer_name in style_layer_names:
+        layer_features = features[layer_name]
+        style_reference_features = layer_features[1, :, :, :]
         combination_features = layer_features[2, :, :, :]
+        sl = style_loss(style_reference_features, combination_features)
+        loss += (style_weight / len(style_layer_names)) * sl
 
-        loss += self.content_weight * self.content_loss(base_image_features, combination_features)
+    # Add total variation loss
+    loss += total_variation_weight * total_variation_loss(combination_image)
+    return loss
+    
+@tf.function
+def compute_loss_and_grads(feature_extractor,combination_image, base_image, style_reference_image):
+    with tf.GradientTape() as tape:
+        loss = compute_loss(feature_extractor,combination_image, base_image, style_reference_image)
+    grads = tape.gradient(loss, combination_image)
+    return loss, grads
 
-        for layer_name in self.style_layer_names:
-            layer_features = features[layer_name]
-            style_reference_features = layer_features[1, :, :, :]
-            combination_features = layer_features[2, :, :, :]
-            sl = self.style_loss(style_reference_features, combination_features)
-            loss += (self.style_weight / len(self.style_layer_names)) * sl
-
-        loss += self.total_variation_weight * self.total_variation_loss(combination_image)
-        return loss
-
-    def aplica_estilo(self, content_image_path, style_image_path, iterations):
-        content_image = self.preprocess_image(content_image_path)
-        style_image = self.preprocess_image(style_image_path)
-
-        base_image = tf.Variable(content_image, dtype=tf.float32)
-        style_reference_image = tf.Variable(style_image, dtype=tf.float32)
-        combination_image = tf.Variable(content_image, dtype=tf.float32)
-
-        self.feature_extractor = vgg19.VGG19(
-            include_top=False, weights="imagenet", input_shape=(self.img_nrows, self.img_ncols, 3)
-        )
-
-        outputs_dict = dict([(layer.name, layer.output) for layer in self.feature_extractor.layers])
-        self.feature_extractor = keras.Model(inputs=self.feature_extractor.inputs, outputs=outputs_dict)
-        self.feature_extractor.trainable = False
-
-        self.optimizer = tf.optimizers.Adam(learning_rate=0.02, beta_1=0.99, epsilon=1e-1)
-
-        @tf.function()
-        def train_step(combination_image):
-            with tf.GradientTape() as tape:
-                loss = self.compute_loss(combination_image, base_image, style_reference_image)
-            grads = tape.gradient(loss, combination_image)
-            self.optimizer.apply_gradients([(grads, combination_image)])
-            combination_image.assign(tf.clip_by_value(combination_image, clip_value_min=0.0, clip_value_max=255.0))
-
-        for i in range(iterations):
-            train_step(combination_image)
-
-        final_image = self.deprocess_image(combination_image.numpy())
-        final_image = Image.fromarray(final_image)
-        return final_image
 
 
 class ResultScreen(tk.Frame):
@@ -471,7 +515,7 @@ class ResultScreen(tk.Frame):
         self.result_label = tk.Label(self, text="Result:")
         self.result_label.pack()
 
-        self.result_image = tk.PhotoImage(file="result4.png")
+        self.result_image = tk.PhotoImage(file="result.png")
         self.result_canvas = tk.Canvas(self, width=self.result_image.width(), height=self.result_image.height())
         self.result_canvas.create_image(0, 0, anchor=tk.NW, image=self.result_image)
         self.result_canvas.pack()
